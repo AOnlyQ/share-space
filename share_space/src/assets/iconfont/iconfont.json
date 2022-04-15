@@ -1,0 +1,37 @@
+{
+  "id": "3320366",
+  "name": "share-space",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "毕业设计-共享自习室",
+  "glyphs": [
+    {
+      "icon_id": "10416644",
+      "name": "qiandao",
+      "font_class": "qiandao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10485800",
+      "name": "shop",
+      "font_class": "shop",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "11372773",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e8c6",
+      "unicode_decimal": 59590
+    },
+    {
+      "icon_id": "897402",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    }
+  ]
+}
