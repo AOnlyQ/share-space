@@ -7,9 +7,8 @@ import "vant/lib/index.css";
 import "@/assets/styles/reset.css";
 import "@/assets/styles/border.css";
 import "@/assets/iconfont/iconfont.css";
-import axios from "axios";
+import "@/request/request";
 Vue.config.productionTip = false;
-axios.defaults.baseURL = "http://127.0.0.1:3000/";
 Vue.use(Vant);
 new Vue({
   router,
