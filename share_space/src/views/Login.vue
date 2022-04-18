@@ -7,10 +7,9 @@
     <van-form @submit="login">
       <van-field
         v-model="loginForm.username"
-        type="number"
         label="账号"
         name="用户名"
-        placeholder="请输入手机号"
+        placeholder="请输入帐号"
       />
       <van-field
         v-model="loginForm.password"
@@ -34,7 +33,8 @@
   </div>
 </template>
 <script>
-import axios from "axios";
+// import axios from "axios";
+// import { Login } from "@/request/api";
 export default {
   name: "Login",
   data() {
@@ -46,18 +46,14 @@ export default {
       },
     };
   },
-  created() {
-    const res = axios.post("http://127.0.0.1:3001/users/login", this.loginForm);
-    console.log("res", res);
-  },
-  mounted() {
-    // this.$refs.checkbox.submit();
-  },
+
   methods: {
     async login() {
-      console.log("zhixinglogin");
-      const res = await this.$axios.post("/users/login", this.loginForm);
-      console.log(res);
+      const res = await this.$http.post("/users/login", this.loginForm);
+      if (res.status === 200) {
+        this.$router.push("/home");
+      }
+      console.log("res", res);
     },
   },
 };

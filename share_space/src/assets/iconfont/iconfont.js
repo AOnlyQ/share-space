@@ -44,6 +44,7 @@
         (e.style.width = 0),
         (e.style.height = 0),
         (e.style.overflow = "hidden"),
+        // eslint-disable-next-line no-self-assign
         (e = e),
         (t = document.body).firstChild ? l(e, t.firstChild) : t.appendChild(e));
   }),
