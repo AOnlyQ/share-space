@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.4.1/dayjs.min.js"></script>
+    <script>
+      let nowDate = new Date();
+      console.log(dayjs(new Date("2019-01-05")).add(3, "day"));
+      console.log(dayjs("2019-01-25").add(3, "day"));
+      console.log(dayjs(nowDate).add(3, "day"));
+    </script>
+  </body>
+</html>

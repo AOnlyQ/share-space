@@ -7,6 +7,8 @@ const instance = axios.create({
 instance.interceptors.request.use(
   (config) => {
     // if()
+    config.headers.Authorization = window.sessionStorage.getItem("token");
+
     return config;
   },
   (err) => {

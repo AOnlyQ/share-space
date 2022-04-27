@@ -8,12 +8,13 @@ class UsersCtl {
       username: { type: 'string', required: true },
       password: { type: 'string', required: true },
     })
-    const user = await User.findOne(ctx.request.body)
-    if (!user) ctx.throw(401, '用户名或密码不正确')
+    let user = await User.findOne(ctx.request.body)
+    if (!user) ctx.throw(401, { message: '用户名或密码不正确' })
     const { _id, username } = user
     // 过期事件为一天
     const token = jsonwebtoken.sign({ _id, username }, secret, { expiresIn: '1d' })
-    ctx.body = { token }
+
+    ctx.body = { userInfo: user, token }
   }
   // 检查要删除或修改的用户是否为当前用户
   async checkOwner (ctx, next) {
@@ -21,6 +22,7 @@ class UsersCtl {
     await next()
 
   }
+  // 新增用户
   async create (ctx) {
     ctx.verifyParams({
       username: { type: 'string', required: true },

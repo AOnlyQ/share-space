@@ -1,0 +1,24 @@
+/* 水平垂直居中 */
+.row-column-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.float-right {
+  float: right;
+}
+/* 水平垂直方向居中-相对定位实现 */
+.column-center-relative {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 文本水平居中 */
+.text-center {
+  text-align: center;
+}
+/* 虚线底边框 */
+/* .border-bottom-dashed-one {
+  border-bottom: 1px dashed $bgColor;
+} */
