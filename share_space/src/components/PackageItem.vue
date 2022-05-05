@@ -6,9 +6,9 @@
     :tag="packageData.tag"
     :price="packageData.price"
     :desc="packageData.desc"
-    :title="packageData.title"
+    :title="packageData.name"
     :origin-price="packageData.origin_price"
-    @click="packageClick"
+    @click="packageClick(packageData._id)"
   />
 </template>
 <script>
@@ -20,9 +20,10 @@ export default {
       price: 2,
     };
   },
+  created() {},
   methods: {
-    packageClick() {
-      this.$router.push("/comboDetail");
+    packageClick(id) {
+      this.$router.push("/comboDetail?id=" + id);
     },
   },
 };

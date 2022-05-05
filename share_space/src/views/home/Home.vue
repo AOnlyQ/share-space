@@ -17,7 +17,7 @@
 <script>
 import RoomItem from "@/components/RoomItem.vue";
 import { GetRoomList } from "@/request/api";
-import roomsList from "@/db/room.js";
+// import roomsList from "@/db/room.js";
 export default {
   components: { RoomItem },
   data() {
@@ -35,15 +35,18 @@ export default {
   },
   created() {
     this.getRoomList();
+
+    console.log(" this.$store.state.userInfo", this.$store.state.userInfo);
   },
   methods: {
     getRoomList() {
       GetRoomList().then((res) => {
-        console.log(res);
-        // this.roomList = res.data;
+        // console.log(res);
+        this.roomList = res.data;
       });
-      this.roomList = roomsList;
-      console.log("tets", this.roomList);
+      // 本地自定义数据
+      // this.roomList = roomsList;
+      // console.log("test", this.roomList);
     },
   },
 };

@@ -13,6 +13,9 @@
       console.log(dayjs(new Date("2019-01-05")).add(3, "day"));
       console.log(dayjs("2019-01-25").add(3, "day"));
       console.log(dayjs(nowDate).add(3, "day"));
+      var day3 = new Date('2022-02-28');
+      day3.setTime(day3.getTime() + 24 * 60 * 60 * 1000);
+      console.log("day3",day3,typeof(day3))
     </script>
   </body>
 </html>

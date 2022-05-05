@@ -4,8 +4,15 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    // 当前登录的用户的一些信息
+    userInfo: JSON.parse(sessionStorage.getItem("userInfo")),
+  },
+  mutations: {
+    setUserInfo(state, data) {
+      state.userInfo = data;
+    },
+  },
   actions: {},
   modules: {},
 });

@@ -95,34 +95,7 @@
       <div style="font-size: 0.15rem; margin: 0.15rem 0; line-height: 0.18rem">
         {{ comboInfo.details }}
       </div>
-
-      <div class="purchase-container">
-        <!-- 一次可买多份功能暂未实现 -->
-        <!-- <van-stepper v-model="purchaseNum" /> -->
-        <van-button
-          icon="shopping-cart"
-          color="#FD8925"
-          size="small"
-          round
-          @click="payPopupShow = true"
-        >
-          下单购买
-        </van-button>
-      </div>
     </div>
-    <!-- 购买支付弹出框 -->
-    <van-popup
-      v-model="payPopupShow"
-      closeable
-      position="bottom"
-      :style="{ height: '30%' }"
-    >
-      <div>逸间自习室</div>
-      <div class="price">
-        {{ (purchaseNum * comboInfo.price) | RMBformat }}.00
-      </div>
-      <van-button type="primary" @click="handlePay">确认支付</van-button>
-    </van-popup>
   </div>
 </template>
 <style lang="stylus" scoped>
@@ -210,47 +183,16 @@
     padding: 0.08rem 0.1rem;
     margin-bottom: 0.1rem;
   }
-
-  .purchase-container {
-    position: fixed;
-    bottom: 0.2rem;
-    right: 0.4rem;
-    display: flex;
-
-    .van-stepper {
-      margin-right: 0.1rem;
-    }
-  }
-}
-
-// 购买支付弹出框
-.van-popup {
-  box-sizing: border-box;
-  border-radius: 0.1rem 0.1rem 0 0;
-  padding: 0.3rem 0.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  .price {
-    font-size: 0.35rem;
-    font-weight: 500;
-  }
 }
 </style>
 <script>
-import { GetComboInfo, AddOrder } from "@/request/api";
 import AppNavBar from "@/components/AppNavBar.vue";
+import { GetComboInfo } from "@/request/api";
 export default {
   components: { AppNavBar },
   data() {
     return {
       comboInfo: {},
-      // 购买数量
-      purchaseNum: 1,
-      // 支付弹出框
-      payPopupShow: false,
     };
   },
   created() {
@@ -259,23 +201,6 @@ export default {
       if (res.status === 200) this.comboInfo = res.data;
     });
   },
-  methods: {
-    // 支付
-    handlePay() {
-      // 确认支付后，新增一条订单，新增成功后，提示支付成功，然后关闭弹出框
-      AddOrder({
-        userId: this.$store.state.userInfo._id,
-        combosInfo: this.comboInfo,
-      }).then((res) => {
-        console.log(res);
-        if ((res.status === 200) | 204) {
-          this.$toast.success("支付成功");
-          setTimeout(() => {
-            this.payPopupShow = false;
-          }, 1000);
-        }
-      });
-    },
-  },
+  methods: {},
 };
 </script>

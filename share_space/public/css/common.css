@@ -1,4 +1,4 @@
-/* 水平垂直居中 */
+/* 子盒子水平垂直居中 */
 .row-column-center-flex {
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
 .float-right {
   float: right;
 }
-/* 水平垂直方向居中-相对定位实现 */
+/* 该盒子水平垂直方向居中-相对定位实现 */
 .column-center-relative {
   position: relative;
   top: 50%;

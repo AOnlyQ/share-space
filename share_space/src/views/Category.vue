@@ -33,7 +33,8 @@
 </style>
 <script>
 import PackcgeItem from "@/components/PackageItem.vue";
-import combosList from "@/db/combos";
+// import combosList from "@/db/combos";
+import { GetComboList } from "@/request/api";
 export default {
   components: { PackcgeItem },
   data() {
@@ -43,6 +44,9 @@ export default {
       packageList: [],
     };
   },
+  created() {
+    this.getCombosList();
+  },
   methods: {
     onRefresh() {
       setTimeout(() => {
@@ -50,11 +54,14 @@ export default {
       }, 1000);
     },
     getCombosList() {
-      this.packageList = combosList;
+      GetComboList().then((res) => {
+        // console.log(res);
+        if (res.status === 200) {
+          this.packageList = res.data;
+        }
+      });
+      // this.packageList = combosList;
     },
-  },
-  created() {
-    this.getCombosList();
   },
 };
 </script>

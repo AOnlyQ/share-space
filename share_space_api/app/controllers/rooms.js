@@ -19,5 +19,10 @@ class RoomsCtl {
   async find (ctx) {
     ctx.body = await Room.find()
   }
+  async findById (ctx) {
+    const room = await Room.findById(ctx.params.id).select('+seats').populate('seats')
+    if (!room) ctx.throw(404, '自习室不存在')
+    ctx.body = room
+  }
 }
 module.exports = new RoomsCtl()

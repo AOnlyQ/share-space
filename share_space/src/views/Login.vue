@@ -41,6 +41,7 @@
 </template>
 <script>
 import { Login } from "@/request/api";
+
 export default {
   name: "Login",
   data() {
@@ -48,8 +49,8 @@ export default {
       logoImg: require("@/assets/yijian-logo.png"),
       passwordType: "password",
       loginForm: {
-        username: "admin",
-        password: "admin",
+        username: "lisi",
+        password: "123456",
       },
     };
   },
@@ -63,14 +64,19 @@ export default {
       // if()
       Login(this.loginForm)
         .then((res) => {
-          console.log("Login组件中login", res);
+          // console.log("Login组件中login", res);
           window.sessionStorage.setItem("token", res.data.token);
           // let userInfo = { username: res.data.username };
+
+          // 方法1.保存在sessionStorage中每次取当前用户id有点麻烦
           window.sessionStorage.setItem(
             "userInfo",
             JSON.stringify(res.data.userInfo)
           );
-
+          // 将store中的数据更新
+          this.$store.commit("setUserInfo", res.data.userInfo);
+          // 方法2.只将其存储在vuex中,不可行，页面刷新，vuex数据恢复默认值，
+          // this.$store.commit('setUserInfo', res.data.userInfo);
           this.$router.push("/home");
         })
         .catch(() => {

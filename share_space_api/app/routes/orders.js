@@ -1,6 +1,12 @@
 const Router = require('koa-router')
-const router = new Router({ prefix: '/orders' })
-router.get('/', (ctx) => {
-  ctx.body = '订单'
-})
+const router = new Router({ prefix: '/:userId/orders' })
+const { createOrder, find } = require("../controllers/orders")
+const { secret } = require('../config')
+const jwt = require('koa-jwt')
+const auth = jwt({ secret })
+// 新增订单
+router.post('/', auth, createOrder)
+// 查找某用户的订单
+router.get('/', auth, find)
+
 module.exports = router

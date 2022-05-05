@@ -21,7 +21,7 @@ export default {
   props: ["roomdata"],
   methods: {
     reserveBtnClick() {
-      this.$router.push("/reserve");
+      this.$router.push("/reserve?id=" + this.roomdata._id);
     },
   },
 };
@@ -64,8 +64,7 @@ export default {
 
     .van-button {
       height: 0.3rem;
-      // color: #fff;
-       color: #000;
+      color: #000;
       position: absolute;
       right: 0;
       bottom: 0;

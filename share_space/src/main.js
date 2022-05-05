@@ -34,7 +34,17 @@ axios.interceptors.request.use((config) => {
 axios.interceptors.response.use((config) => {
   return config;
 });
-
+Vue.filter("RMBformat", (val) => {
+  return "￥" + Number(val);
+});
+Vue.filter("dateFormat", (Timestamp) => {
+  let date1 = new Date(Timestamp);
+  return (
+    date1.toLocaleDateString().replace(/\//g, "-") +
+    " " +
+    date1.toTimeString().substr(0, 8)
+  );
+});
 Vue.prototype.$http = axios;
 Vue.use(Vant);
 Vue.use(Lazyload);
