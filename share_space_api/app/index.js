@@ -7,7 +7,7 @@ const routing = require('./routes/index')
 const mongoose = require('mongoose')
 const { connectionLocal } = require('./config')
 const cors = require('koa2-cors');
-mongoose.connect(connectionLocal, { useNewUrlParser: true }, () => console.log('数据库连接成功'))
+mongoose.connect(connectionLocal, { useNewUrlParser: true }, () => console.log('-----------------------------------数据库连接成功-----------------------------------'))
 mongoose.connection.on('error', console.error)
 
 app.use(error({
@@ -29,7 +29,7 @@ app.use(cors({
   },
   maxAge: 5, //指定本次预检请求的有效期，单位为秒。
   credentials: true, //是否允许发送Cookie
-  allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS',"PATCH"], //设置所允许的HTTP请求方法
+  allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', "PATCH"], //设置所允许的HTTP请求方法
   allowHeaders: ['Content-Type', 'Authorization', 'Accept'], //设置服务器支持的所有头信息字段
   exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'] //设置获取其他自定义字段
 }))

@@ -8,7 +8,7 @@
       <div class="des-item">介绍：{{ roomdata.description }}</div>
       <div class="des-item">时间：{{ roomdata.time }}</div>
 
-      <div class="des-item">剩余座位：{{ roomdata.remainings }}</div>
+      <div class="des-item">座位总数：{{ roomdata.remainings }}</div>
       <van-button round type="default" color="#F4D04B" @click="reserveBtnClick"
         >预约</van-button
       >

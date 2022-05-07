@@ -26,7 +26,7 @@ const routes = [
   {
     path: "/category",
     meta: { level: 2, activeNum: 1 },
-    component: () => import("@/views/Category.vue"),
+    component: () => import("@/views/combos/Category.vue"),
   },
   {
     path: "/checkin",
@@ -75,12 +75,12 @@ const routes = [
   {
     // 套餐详情页面,有购买套餐功能
     path: "/comboDetail",
-    component: () => import("@/views/ComboDetail.vue"),
+    component: () => import("@/views/combos/ComboDetail.vue"),
   },
   {
     // 套餐详情页面,仅仅展示数据
     path: "/comboDetailInfo",
-    component: () => import("@/views/ComboDetailInfo.vue"),
+    component: () => import("@/views/combos/ComboDetailInfo.vue"),
   },
   {
     path: "/test",

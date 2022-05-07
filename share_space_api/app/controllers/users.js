@@ -63,13 +63,10 @@ class UsersCtl {
     ctx.body = user
   }
 
-  // 查找特定用户下的所有订单
+  // 查找特定用户下的所有订单,在orders的控制器里有这个接口
   async findUserOrders (ctx) {
 
-
   }
-  
-
 
 }
 module.exports = new UsersCtl()

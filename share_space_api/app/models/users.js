@@ -8,7 +8,10 @@ const userSchema = new Schema({
   // order 订单信息
   orders: { type: [{ type: Schema.Types.ObjectId, ref: "Order" }], select: false },
 
-  // 选购的套餐信息
-  combos: { type: [{ type: Schema.Types.ObjectId, ref: "Combo" }], select: false }
+  // 选购的套餐信息,可不加，用户的订单信息里包括套餐
+  // combos: { type: [{ type: Schema.Types.ObjectId, ref: "Combo" }], select: false }
+  // 预约信息单
+  reservations: { type: [{ type: Schema.Types.ObjectId, ref: "Reservation" }], select: false },
+
 })
 module.exports = model('User', userSchema)

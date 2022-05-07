@@ -49,8 +49,8 @@ export default {
       logoImg: require("@/assets/yijian-logo.png"),
       passwordType: "password",
       loginForm: {
-        username: "lisi",
-        password: "123456",
+        username: "test",
+        password: "test",
       },
     };
   },

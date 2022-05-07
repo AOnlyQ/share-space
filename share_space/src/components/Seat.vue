@@ -3,7 +3,7 @@
     <van-icon
       name="send-gift"
       size="40"
-      :color="seatData.status ? 'green' : 'red'"
+      :color="seatStatus.status === 'false' ? 'red' : 'green'"
       @click="chooseSeat"
     />
     <div style="font-size: 0.12rem">
@@ -20,12 +20,17 @@
 }
 </style>
 <script>
+import { AddUserReservation } from "@/request/api.js";
 export default {
-  props: ["seatData"],
+  props: ["seatData", "seatStatus"],
   data() {
     return {
       // status:
     };
+  },
+  created() {
+    console.log("this.seatStatus", this.seatStatus);
+    console.log("this.seatData", this.seatData);
   },
   methods: {
     chooseSeat() {
@@ -36,9 +41,22 @@ export default {
         })
         .then(() => {
           // on confirm
+          // 确认预约后,发送请求，将预约时间日期座位id传递过去
+          AddUserReservation({
+            start_time: this.seatStatus.start_time,
+            end_time: this.seatStatus.end_time,
+            userId: this.$store.state.userInfo._id,
+            roomId: this.seatData.roomId,
+            roomName: this.seatData.roomName,
+            seatId: this.seatData._id,
+            seatName: this.seatData.name,
+          }).then((res) => {
+            console.log("res:", res);
+          });
         })
         .catch(() => {
           // on cancel
+          console.log("取消预约");
         });
     },
   },

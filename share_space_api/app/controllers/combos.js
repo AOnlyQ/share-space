@@ -1,4 +1,5 @@
 const Combo = require("../models/combos")
+const User = require("../models/users")
 class CombosCtl {
   // 新增套餐
   async create (ctx) {
@@ -25,5 +26,6 @@ class CombosCtl {
     if (!combo) ctx.throw(404, '该套餐不存在')
     ctx.body = combo
   }
+  // 查询某用户的套餐
 }
 module.exports = new CombosCtl()

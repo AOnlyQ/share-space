@@ -1,6 +1,11 @@
 <template>
   <div>
     <AppNavBar :title="'我的订单'" />
+    <van-empty
+      v-if="!orderList.length"
+      description="暂无订单"
+      image="https://img01.yzcdn.cn/vant/custom-empty-image.png"
+    />
     <OrderItem v-for="item in orderList" :key="item._id" :orderInfo="item" />
   </div>
 </template>

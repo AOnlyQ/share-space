@@ -1,5 +1,6 @@
 const Seat = require("../models/seats")
 const Room = require("../models/rooms")
+
 class SeatsCtl {
   // 新增座位
   async createSeat (ctx) {
@@ -7,7 +8,8 @@ class SeatsCtl {
       code: { type: 'number', required: true },
       name: { type: 'string', required: true },
       roomId: { type: 'string', required: true },
-      status: { type: 'boolean' },
+      roomName: { type: 'string', required: true },
+      statusList: { type: 'array' }
 
     })
     let seat = await new Seat(ctx.request.body).save()
@@ -19,14 +21,26 @@ class SeatsCtl {
     // ctx.body = seat
     ctx.status = 204
   }
+  async updateSeat (ctx) {
+
+    ctx.verifyParams({
+      code: { type: 'number', required: true },
+      name: { type: 'string', required: true },
+      roomId: { type: 'string', required: true },
+      roomName: { type: 'string', required: true },
+      statusList: { type: 'array' }
+    })
+    const seat = await Seat.findByIdAndUpdate(ctx.params.id, ctx.request.body, { new: true })
+    ctx.body = seat
+  }
   // 查询某自习室的所有座位
   async find (ctx) {
     // let seats = await Room.find({ seats: ctx.state.room._id })
     let room = await Room.findById(ctx.params.roomId).select(' +seats').populate('seats')
 
     // console.log("room", room)
-
     ctx.body = room.seats
   }
+
 }
 module.exports = new SeatsCtl()

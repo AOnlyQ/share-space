@@ -40,8 +40,13 @@
         </van-col>
       </van-row>
       <div class="seat-title">选座</div>
-      <div class="seats-container">
-        <Seat v-for="item in roomInfo.seats" :key="item._id" :seatData="item" />
+      <div class="seats-container" v-if="seatsStatus.length">
+        <Seat
+          v-for="item in roomInfo.seats"
+          :key="item._id"
+          :seatData="item"
+          :seatStatus="getSeatStatus(item._id)"
+        />
       </div>
     </div>
     <van-datetime-picker
@@ -71,7 +76,7 @@
 <script>
 import AppNavBar from "@/components/AppNavBar";
 import Seat from "@/components/Seat.vue";
-import { GetRoomInfo } from "@/request/api.js";
+import { GetRoomInfo, GetSeatsStatus } from "@/request/api.js";
 export default {
   components: { AppNavBar, Seat },
   data() {
@@ -93,6 +98,8 @@ export default {
       curEndTime: "",
       // 当前自习室的一些信息
       roomInfo: {},
+      // 当前自习室所有座位状态
+      seatsStatus: [],
     };
   },
   created() {
@@ -107,6 +114,9 @@ export default {
     });
   },
   methods: {
+    getSeatStatus(id) {
+      return this.seatsStatus.find((item) => item.seatId === id);
+    },
     setOptionalDate() {
       // 可选的预约时间为后一天开始的三天内
       this.minDate = new Date();
@@ -166,6 +176,17 @@ export default {
       } else {
         this.endTime = this.curEndTime;
         this.endPickerVisible = false;
+        // 选择好时间后，根据传的时间段，查询这个时间段的当前自习室的所有座位状态
+        GetSeatsStatus({
+          input_start: this.reserveDateStr + " " + this.startTime,
+          input_end: this.reserveDateStr + " " + this.endTime,
+          roomId: this.$route.query.id,
+        }).then((res) => {
+          // console.log("res", res);
+          if (res.status === 200) {
+            this.seatsStatus = res.data;
+          }
+        });
       }
       // console.log("this.endTime", this.endTime);
     },

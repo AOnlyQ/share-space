@@ -16,7 +16,7 @@ export default {
   props: ["packageData"],
   data() {
     return {
-      thumbImg: require("@/assets/images/white.jpg"),
+      thumbImg: require("@/assets/images/package1.jpg"),
       price: 2,
     };
   },
