@@ -2,12 +2,12 @@
   <div>
     <van-sticky>
       <van-nav-bar title="套餐" />
-      <van-tabs v-model="active">
+      <!-- <van-tabs v-model="active">
         <van-tab title="全部套餐">内容 1</van-tab>
         <van-tab title="小时">内容 2</van-tab>
         <van-tab title="包天">内容 3</van-tab>
         <van-tab title="包月">内容 4</van-tab>
-      </van-tabs>
+      </van-tabs> -->
     </van-sticky>
     <van-pull-refresh
       v-model="isLoading"

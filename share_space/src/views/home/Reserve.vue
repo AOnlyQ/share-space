@@ -19,7 +19,7 @@
         <van-cell
           title="预约日期"
           :value="reserveDateStr"
-          @click="calendarVisible = true"
+          @click="reserveDataClick"
           is-link
         />
       </div>
@@ -39,8 +39,19 @@
           {{ endTime ? endTime : "结束学习时间" }}
         </van-col>
       </van-row>
-      <div class="seat-title">选座</div>
-      <div class="seats-container" v-if="seatsStatus.length">
+      <van-button
+        round
+        size="small"
+        class="search-btn"
+        :loading="loadingBtn"
+        type="info"
+        text="查询座位"
+        loading-text="加载中..."
+        @click="renderSeats"
+      />
+
+      <div class="seats-container" v-if="seatsRender">
+        <div class="seat-title">选座</div>
         <Seat
           v-for="item in roomInfo.seats"
           :key="item._id"
@@ -81,6 +92,8 @@ export default {
   components: { AppNavBar, Seat },
   data() {
     return {
+      loadingBtn: false,
+      seatsRender: false,
       calendarVisible: false,
       startPickerVisible: false,
       endPickerVisible: false,
@@ -114,6 +127,10 @@ export default {
     });
   },
   methods: {
+    reserveDataClick() {
+      this.seatsRender = false;
+      this.calendarVisible = true;
+    },
     getSeatStatus(id) {
       return this.seatsStatus.find((item) => item.seatId === id);
     },
@@ -141,6 +158,7 @@ export default {
       return options;
     },
     chooseStartTime() {
+      this.seatsRender = false;
       this.curStartTime = this.startTime;
       // 没有选择日期提示先选择日期
       if (!this.reserveDateStr) {
@@ -150,8 +168,13 @@ export default {
       }
     },
     chooseEndTime() {
-      this.curEndTime = this.endTime;
-      this.endPickerVisible = true;
+      this.seatsRender = false;
+      if (!this.startTime) {
+        this.$toast("请先选择开始时间！");
+      } else {
+        this.curEndTime = this.endTime;
+        this.endPickerVisible = true;
+      }
     },
     confirmStartTime() {
       // 选择完预约日期后，如果选择的日期为当天，则只能选择此刻之后的时间
@@ -176,6 +199,10 @@ export default {
       } else {
         this.endTime = this.curEndTime;
         this.endPickerVisible = false;
+      }
+    },
+    renderSeats() {
+      if (this.reserveDateStr && this.startTime && this.endTime) {
         // 选择好时间后，根据传的时间段，查询这个时间段的当前自习室的所有座位状态
         GetSeatsStatus({
           input_start: this.reserveDateStr + " " + this.startTime,
@@ -185,10 +212,12 @@ export default {
           // console.log("res", res);
           if (res.status === 200) {
             this.seatsStatus = res.data;
+            this.seatsRender = true;
           }
         });
+      } else {
+        this.$toast("请先选择好时间！");
       }
-      // console.log("this.endTime", this.endTime);
     },
   },
 };
@@ -231,9 +260,21 @@ export default {
     }
   }
 
+  .search-btn {
+    position: relative;
+    left: 50%;
+    margin: 0.15rem 0;
+    transform: translateX(-50%);
+    padding: 0.18rem 0.2rem;
+    font-size: 0.14rem;
+    font-weight: 600;
+    color: #000;
+    background: $priceFontColor;
+  }
+
   .seat-title {
     font-size: 0.2rem;
-    margin: 0.2rem 0 0.1rem;
+    margin: 0.1rem 0.15rem;
   }
 
   .seats-container {

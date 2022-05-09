@@ -1,6 +1,14 @@
 <template>
   <div>
     <AppNavBar title="我的套餐" />
+    <van-loading
+      class="my-van-loading"
+      size="24px"
+      type="spinner"
+      color="#F4D04B"
+      v-show="loadingVisible"
+      >加载中...</van-loading
+    >
     <div class="container">
       <MyComboItem
         :comboInfo="item.combosInfo"
@@ -18,6 +26,7 @@ import { GetUserOrderList } from "@/request/api";
 export default {
   data() {
     return {
+      loadingVisible: true,
       orderList: [],
     };
   },
@@ -27,6 +36,7 @@ export default {
       console.log(res);
       if (res.status === 200) {
         this.orderList = res.data;
+        this.loadingVisible = false;
       }
     });
   },

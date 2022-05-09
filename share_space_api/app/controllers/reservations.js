@@ -26,8 +26,8 @@ class ReservationsCtl {
       seat.reservations.push(reservation._id)
       seat.save()
     }
-
-    ctx.status = 204
+    ctx.body = { reservationId: reservation._id }
+    // ctx.status = 204
   }
   // 查询某用户所有的预约单
   async findByUser (ctx) {
@@ -52,7 +52,14 @@ class ReservationsCtl {
       // }, 1000)
 
     }
-
+  }
+  // 根据预约单id查询预约单
+  async findById (ctx) {
+    // console.log("test")
+    const reservation = await Reservation.findById(ctx.params.id)
+    // console.log("reservation",reservation)
+    if (!reservation) ctx.throw(404, '该预约单不存在')
+    ctx.body = reservation
   }
 }
 module.exports = new ReservationsCtl()

@@ -1,10 +1,10 @@
 const Router = require('koa-router')
-const router = new Router({ prefix: '/:userId/reservations' })
-const { create, findByUser } = require('../controllers/reservations')
+const router = new Router()
+const { create, findByUser, findById } = require('../controllers/reservations')
 const { secret } = require('../config')
 const jwt = require('koa-jwt')
 const auth = jwt({ secret })
-router.post('/', auth, create)
-router.get('/', findByUser)
-
+router.post('/:userId/reservations', auth, create)
+router.get('/:userId/reservations', findByUser)
+router.get('/reservations/:id', findById)
 module.exports = router

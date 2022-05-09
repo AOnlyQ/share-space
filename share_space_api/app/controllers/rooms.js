@@ -40,7 +40,7 @@ class RoomsCtl {
       // 如果有预约记录，查询输入的时间段是否与预约记录有交集，若没有，则状态为可预约
       if (reservations.length) {
         for (let record of reservations) {
-          console.log("record", record)
+          // console.log("record", record)
           let start_time = record.start_time;
           let end_time = record.end_time
           let input_start = ctx.request.body.input_start

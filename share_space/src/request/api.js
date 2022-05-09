@@ -50,3 +50,6 @@ export const GetUserReservationList = (params) =>
 // 新增某用户的预约单
 export const AddUserReservation = (params) =>
   request.post(`/${params.userId}/reservations`, params);
+// 根据预约单id查询预约单
+export const GetReservationById = (params) =>
+  request.get(`/reservations/${params.reservationId}`);

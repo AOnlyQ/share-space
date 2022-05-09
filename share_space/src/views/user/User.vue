@@ -36,7 +36,7 @@
         />
         团购验券
       </van-grid-item>
-      <van-grid-item icon="photo-o">
+      <van-grid-item icon="photo-o" @click="$router.push('/my_record')">
         <img
           src="@/assets/icon-img/records.png"
           alt=""
@@ -57,7 +57,7 @@
         icon="notes-o"
         is-link
         style="margin-bottom: 0.1rem"
-        @click="$router.push('/order')"
+        @click="$router.push('/my_order')"
       />
       <van-cell
         title="学习公约"

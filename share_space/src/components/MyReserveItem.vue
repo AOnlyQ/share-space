@@ -15,8 +15,8 @@
           <span>
             {{
               reservationInfo.start_time +
-              " 至 " +
-              reservationInfo.end_time.slice(5)
+              "-" +
+              reservationInfo.end_time.slice(9)
             }}
           </span>
         </span>
@@ -47,7 +47,7 @@
 export default {
   props: ["reservationInfo"],
   created() {
-    console.log("reservationInfo", this.reservationInfo);
+    // console.log("reservationInfo", this.reservationInfo);
   },
 };
 </script>

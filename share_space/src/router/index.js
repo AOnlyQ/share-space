@@ -47,9 +47,14 @@ const routes = [
     component: () => import("@/views/user/MyReserve.vue"),
   },
   {
+    // 我的学习记录页面
+    path: "/my_record",
+    component: () => import("@/views/user/MyRecord.vue"),
+  },
+  {
     // 我的订单页面
-    path: "/order",
-    component: () => import("@/views/user/Order.vue"),
+    path: "/my_order",
+    component: () => import("@/views/user/MyOrder.vue"),
   },
   {
     path: "/learning_rules",
@@ -70,6 +75,10 @@ const routes = [
   {
     path: "/reserve",
     component: () => import("@/views/home/Reserve.vue"),
+  },
+  {
+    path: "/reserve_info",
+    component: () => import("@/views/home/ReserveInfo.vue"),
   },
 
   {

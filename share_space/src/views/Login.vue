@@ -50,7 +50,7 @@ export default {
       passwordType: "password",
       loginForm: {
         username: "test",
-        password: "test",
+        password: "123456",
       },
     };
   },
