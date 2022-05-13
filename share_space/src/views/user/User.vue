@@ -9,7 +9,8 @@
       </van-col>
       <van-col span="11" class="username">{{ userInfo.username }}</van-col>
       <van-col span="7">
-        <van-icon name="edit" @click="editInfoFormVisible = true" />
+        <!-- @click="editInfoFormVisible = true" -->
+        <van-icon name="edit" @click="$router.push('/user_info')" />
       </van-col>
     </van-row>
     <van-row class="row-two">
@@ -28,14 +29,14 @@
         />
         剩余套餐
       </van-grid-item>
-      <van-grid-item icon="photo-o">
+      <!-- <van-grid-item>
         <img
           src="@/assets/icon-img/coupons.png"
           alt=""
           style="height: 50%; margin-bottom: 0.06rem"
         />
         团购验券
-      </van-grid-item>
+      </van-grid-item> -->
       <van-grid-item icon="photo-o" @click="$router.push('/my_record')">
         <img
           src="@/assets/icon-img/records.png"
@@ -43,6 +44,14 @@
           style="height: 50%; margin-bottom: 0.06rem"
         />
         学习记录
+      </van-grid-item>
+      <van-grid-item>
+        <img
+          src="@/assets/icon-img/ranking.png"
+          alt=""
+          style="height: 50%; margin-bottom: 0.06rem"
+        />
+        学时排行
       </van-grid-item>
     </van-grid>
     <div>
@@ -72,16 +81,10 @@
         @click="$router.push('/contact_us')"
       />
       <van-cell
-        title="用户协议"
-        icon="description"
+        title="系统设置"
+        icon="setting-o"
         is-link
-        @click="$router.push('/register_info')"
-      />
-      <van-cell
-        title="隐私政策"
-        icon="goods-collect-o"
-        is-link
-        @click="$router.push('/private_policy')"
+        @click="$router.push('/system_setting')"
       />
     </div>
 
@@ -138,7 +141,7 @@
 </template>
 
 <script>
-import { EditUserInfo, GetUserInfo } from "@/request/api";
+import { GetUserInfo } from "@/request/api";
 export default {
   data() {
     return {
@@ -175,31 +178,6 @@ export default {
     switchPasswordType() {
       this.passwordType =
         this.passwordType === "password" ? "text" : "password";
-    },
-    editUserInfo() {
-      let { username, password } = this.editUserForm;
-      EditUserInfo({ id: this.userInfo._id, username, password })
-        .then((res) => {
-          if (res.status === 200) {
-            this.$toast.success("修改成功");
-            setTimeout(() => {
-              this.editInfoFormVisible = false;
-            }, 10);
-
-            this.getUserInfo();
-          }
-        })
-        .then(() => {
-          // 用户信息修改了，将sessionStorage中的也进行修改
-          window.sessionStorage.setItem(
-            "userInfo",
-            JSON.stringify(this.userInfo)
-          );
-
-          this.$store.commit("setUserInfo", this.userInfo);
-          // 深拷贝
-          this.editUserForm = JSON.parse(JSON.stringify(this.userInfo));
-        });
     },
   },
 };

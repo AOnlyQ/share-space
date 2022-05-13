@@ -8,13 +8,15 @@
         <van-field
           v-model="loginForm.username"
           name="用户名"
-          placeholder="请输入帐号"
+          placeholder="请输入用户名"
+          :rules="[{ required: true, message: '请填写用户名' }]"
         />
         <van-field
           v-model="loginForm.password"
           :type="passwordType"
           name="密码"
           placeholder="请输入密码"
+          :rules="[{ required: true, message: '请填写密码' }]"
         >
           <template slot="right-icon">
             <span class="solts" @click="switchPasswordType">
@@ -49,8 +51,8 @@ export default {
       logoImg: require("@/assets/yijian-logo.png"),
       passwordType: "password",
       loginForm: {
-        username: "test",
-        password: "123456",
+        username: "",
+        password: "",
       },
     };
   },

@@ -24,5 +24,8 @@ html {
 import AppTabbar from "@/components/AppTabbar.vue";
 export default {
   components: { AppTabbar },
+  data() {
+    return {};
+  },
 };
 </script>

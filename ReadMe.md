@@ -1,8 +1,20 @@
-## 目录结构说明
+# share_space
 
-### 前端部门：share_space
+## 前端部分：share_space
 
-### 后端接口：share_space_api
+
+
+## 后端部分：share_space_api
+
+### 接口文档
+
+接口文档：
+
+链接: https://www.apifox.cn/apidoc/shared-888ebbd7-9481-4873-811d-cd42f8b5a4e2  
+
+访问密码 : 4KV1aL86 
+
+### 目录结构说明
 
 ```
 

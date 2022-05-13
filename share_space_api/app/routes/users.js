@@ -2,8 +2,8 @@ const Router = require('koa-router')
 const router = new Router({ prefix: '/users' })
 const jsonwebtoken = require('jsonwebtoken')
 const { secret } = require('../config')
-const { login, checkOwner, find, findById, create, deleteById, update } = require('../controllers/users')
-const { createOrder} = require('../controllers/orders')
+const { login, checkOwner, checkUsernameExist, find, findById, create, deleteById, update } = require('../controllers/users')
+const { createOrder } = require('../controllers/orders')
 const jwt = require('koa-jwt')
 // 自定义认证中间件
 // const auth = async (ctx, next) => {
@@ -24,13 +24,13 @@ const jwt = require('koa-jwt')
 const auth = jwt({ secret })
 router.post('/login', login)
 
-router.post('/', create)
+router.post('/',checkUsernameExist , create)
 router.delete('/:id', auth, checkOwner, deleteById)
-router.patch('/:id', auth, checkOwner, update)
+router.patch('/:id', auth, checkOwner,checkUsernameExist, update)
 // 获取用户列表
 router.get('/', find)
 router.get('/:id', findById)
 router.patch('/')
 // 用户新增订单
-router.post('/:id/orders',auth,createOrder,)
+router.post('/:id/orders', auth, createOrder)
 module.exports = router

@@ -80,7 +80,18 @@ const routes = [
     path: "/reserve_info",
     component: () => import("@/views/home/ReserveInfo.vue"),
   },
-
+  {
+    path: "/system_setting",
+    component: () => import("@/views/user/SystemSetting.vue"),
+  },
+  {
+    path: "/user_info",
+    component: () => import("@/views/user/UserInfo.vue"),
+  },
+  {
+    path: "/pwd_setting",
+    component: () => import("@/views/user/PwdSetting.vue"),
+  },
   {
     // 套餐详情页面,有购买套餐功能
     path: "/comboDetail",

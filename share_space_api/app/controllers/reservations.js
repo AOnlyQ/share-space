@@ -61,5 +61,27 @@ class ReservationsCtl {
     if (!reservation) ctx.throw(404, '该预约单不存在')
     ctx.body = reservation
   }
+
+  // 取消预约，未写完
+  async cancelReserve (ctx) {
+    const reservation = await Reservation.findById(ctx.params.id)
+    if (!reservation) ctx.throw(404, '该预约单不存在')
+    reservation.status = 'cancel'
+    let me = await User.findById(ctx.state.user._id).populate('reservations')
+    let seat = await Seat.findById(ctx.request.body.seatId).select('+reservations').populate('reservations')
+   
+
+    if (me && seat) {
+      me.reservations.push(reservation._id)
+      me.save()
+      let index = seat.reservations.findIndex((el,index)=> el._id === reservation._id);
+      if(index>-1){//大于0 代表存在，
+        seat.reservations.splice(index,1);//存在就删除
+      }
+      seat.save()
+    }
+    ctx.body = { reservationId: reservation._id }
+  }
+
 }
 module.exports = new ReservationsCtl()

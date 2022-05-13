@@ -4,7 +4,12 @@ const userSchema = new Schema({
 
   username: { type: String, required: true },
   password: { type: String, required: true },
-  // 
+  avatar_url: { type: String }, // 用户头像
+  gender: { type: String, enum: ['male', 'female'], default: 'male', required: true },
+  age: { type: Number },
+  location: { type: Object },
+  personal_signature: { type: String },
+  hobbies: { type: [{ type: String }] },
   // order 订单信息
   orders: { type: [{ type: Schema.Types.ObjectId, ref: "Order" }], select: false },
 

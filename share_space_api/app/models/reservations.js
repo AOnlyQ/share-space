@@ -10,6 +10,8 @@ const reservationSchema = new Schema({
   roomName: { type: String, required: true },
   seatId: { type: Schema.Types.ObjectId, ref: 'Seat' },
   seatName: { type: String, required: true },
+  // 预约状态success成功预约，cancel预约取消
+  // status: { type: String, required: true ,default: 'success'}
 }, {
   timestamps: true
 })

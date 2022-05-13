@@ -9,6 +9,11 @@
       v-show="loadingVisible"
       >加载中...</van-loading
     >
+    <van-empty
+      v-if="!orderList.length"
+      description="暂无套餐"
+      image="https://img01.yzcdn.cn/vant/custom-empty-image.png"
+    />
     <div class="container">
       <MyComboItem
         :comboInfo="item.combosInfo"

@@ -3,6 +3,14 @@ const User = require('../models/users')
 const jsonwebtoken = require('jsonwebtoken')
 const { secret } = require('../config')
 class UsersCtl {
+  // 检查用户名是否存在
+  async checkUsernameExist (ctx, next) {
+    const { username } = ctx.request.body
+    const repeatedUser = await User.findOne({ username })
+    if (repeatedUser && username !== ctx.state.user.username) ctx.throw(409, '用户名已经存在')
+    await next()
+
+  }
   async login (ctx) {
     ctx.verifyParams({
       username: { type: 'string', required: true },
@@ -31,9 +39,9 @@ class UsersCtl {
       username: { type: 'string', required: true },
       password: { type: 'string', required: true },
     })
-    const { username } = ctx.request.body
-    const requestUser = await User.findOne({ username })
-    if (requestUser) ctx.throw(409, '用户已经存在')
+    // const { username } = ctx.request.body
+    // const requestUser = await User.findOne({ username })
+    // if (requestUser) ctx.throw(409, '用户已经存在')
     const user = await new User(ctx.request.body).save()
     ctx.body = user
   }

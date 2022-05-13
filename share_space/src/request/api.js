@@ -6,7 +6,7 @@ import request from "@/request/request";
 export const Login = (params) => request.post("/users/login", params);
 export const Register = (params) => request.post("/users", params);
 export const EditUserInfo = (params) =>
-  request.patch(`/users/${params.id}`, params);
+  request.patch(`/users/${params._id}`, params);
 export const GetUserInfo = (params) => request.get(`/users/${params.id}`);
 /**
  * 自习室管理

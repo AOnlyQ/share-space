@@ -31,16 +31,10 @@
     </div>
     <div class="right" style="flex: 2">
       <!-- 暂时还没有实现取消预约的功能 -->
-      <!-- <van-button type="primary" size="mini" color="#F4D04B">
+      <van-button type="primary" size="mini" color="#F4D04B">
         取消预约
-      </van-button> -->
+      </van-button>
     </div>
-    <!-- <div class="title">{{}}</div>
-    <div>{{comboInfo[0]}}</div>
-    <div class="footer">
-      <div>到馆签到后开通使用</div>
-     
-    </div> -->
   </div>
 </template>
 <script>

@@ -9,18 +9,22 @@
       v-show="loadingVisible"
       >加载中...</van-loading
     >
+    <van-empty
+      v-if="!reservationList.length"
+      description="暂无预约记录"
+      image="https://img01.yzcdn.cn/vant/custom-empty-image.png"
+    />
     <MyReserveItem
       v-for="item in reservationList"
       :key="item._id"
       :reservationInfo="item"
     />
-    <div class="footer" v-show="!loadingVisible">
+    <div class="footer" v-show="reservationList.length">
       -------我是有底线的-------
     </div>
   </div>
 </template>
 <style lang="stylus">
-
 .footer {
   text-align: center;
   height: 0.4rem;
