@@ -9,8 +9,6 @@ class OrdersCtl {
 
     })
     let order = await new Order(ctx.request.body).save()
-    // console.log("order", order)
-    // console.log("ctx.state.user", ctx.state.user)
     let me = await User.findById(ctx.state.user._id).select('+orders')
     me.orders.push(order._id)
     me.save()
@@ -18,8 +16,7 @@ class OrdersCtl {
     ctx.status = 204
   }
   // 查询某用户所有订单
-  async find (ctx) {
-    // let orders = await User.find({ orders: ctx.state.user._id })
+  async findUserOrders (ctx) {
     let user = await User.findById(ctx.state.user._id).select('+orders').populate('orders')
 
     // console.log("user",user)

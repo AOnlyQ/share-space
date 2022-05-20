@@ -87,56 +87,6 @@
         @click="$router.push('/system_setting')"
       />
     </div>
-
-    <van-popup v-model="editInfoFormVisible" closeable style="">
-      <div class="title">个人信息</div>
-      <van-form @submit="editUserInfo">
-        <van-field
-          v-model="editUserForm.username"
-          label="账号"
-          name="用户名"
-          placeholder="请输入帐号"
-          :rules="[{ required: true, message: '请填写用户名' }]"
-        />
-        <van-field
-          v-model="editUserForm.password"
-          :type="passwordType"
-          label="密码"
-          name="密码"
-          placeholder="请输入密码"
-          :rules="[{ required: true, message: '请填写密码' }]"
-        >
-          <template slot="right-icon">
-            <span class="solts" @click="switchPasswordType">
-              <van-icon name="eye" v-if="passwordType === 'password'" />
-              <van-icon name="closed-eye" v-else />
-            </span>
-          </template>
-        </van-field>
-
-        <div style="margin: 16px; display: flex">
-          <van-button
-            round
-            block
-            type="primary"
-            native-type="button"
-            style="background: #1ab7a0"
-            text="取消"
-            @click="editInfoFormVisible = false"
-            size="small"
-          />
-          <van-button
-            round
-            block
-            type="primary"
-            native-type="submit"
-            style="background: #1ab7a0"
-            text="确认"
-            size="small"
-          />
-        </div>
-      </van-form>
-    </van-popup>
   </div>
 </template>
 

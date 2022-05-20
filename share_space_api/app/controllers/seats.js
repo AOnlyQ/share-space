@@ -9,7 +9,6 @@ class SeatsCtl {
       name: { type: 'string', required: true },
       roomId: { type: 'string', required: true },
       roomName: { type: 'string', required: true },
-      statusList: { type: 'array' }
 
     })
     let seat = await new Seat(ctx.request.body).save()

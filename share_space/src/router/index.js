@@ -89,6 +89,10 @@ const routes = [
     component: () => import("@/views/user/UserInfo.vue"),
   },
   {
+    path: "/input_edit_page",
+    component: () => import("@/components/InputEditPage.vue"),
+  },
+  {
     path: "/pwd_setting",
     component: () => import("@/views/user/PwdSetting.vue"),
   },

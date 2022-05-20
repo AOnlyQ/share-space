@@ -9,7 +9,7 @@ const userSchema = new Schema({
   age: { type: Number },
   location: { type: Object },
   personal_signature: { type: String },
-  hobbies: { type: [{ type: String }] },
+  liking_exams: { type: [{ type: Schema.Types.ObjectId, ref: "Exam" }], select: false },
   // order 订单信息
   orders: { type: [{ type: Schema.Types.ObjectId, ref: "Order" }], select: false },
 

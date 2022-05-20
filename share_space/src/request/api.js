@@ -8,6 +8,10 @@ export const Register = (params) => request.post("/users", params);
 export const EditUserInfo = (params) =>
   request.patch(`/users/${params._id}`, params);
 export const GetUserInfo = (params) => request.get(`/users/${params.id}`);
+// 查询某用户的所有套餐
+export const GetUserComboList = (params) =>
+  request.get(`/users/${params.id}/combos`);
+
 /**
  * 自习室管理
  */
@@ -27,6 +31,7 @@ export const GetSeatsStatus = (params) =>
 /**
  * 套餐管理
  */
+// 查询所有套餐
 export const GetComboList = () => request.get("/combos");
 // 根据id查询套餐详情
 export const GetComboInfo = (params) => request.get(`/combos/${params.id}`);

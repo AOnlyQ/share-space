@@ -8,7 +8,7 @@
       <div class="des-item">介绍：{{ roomdata.description }}</div>
       <div class="des-item">时间：{{ roomdata.time }}</div>
 
-      <div class="des-item">座位总数：{{ roomdata.remainings }}</div>
+      <div class="des-item">座位总数：{{ roomdata.total_nums }}</div>
       <van-button round type="default" color="#F4D04B" @click="reserveBtnClick"
         >预约</van-button
       >
@@ -16,12 +16,22 @@
   </div>
 </template>
 <script>
+import { GetUserComboList } from "@/request/api.js";
 export default {
   name: "RoomItem",
   props: ["roomdata"],
   methods: {
     reserveBtnClick() {
-      this.$router.push("/reserve?id=" + this.roomdata._id);
+      // 检查用户是否有套餐
+      GetUserComboList({
+        id: this.$store.state.userInfo._id,
+      }).then((res) => {
+        // console.log(res);
+        if (!res.data.length) {
+          this.$toast.fail("请先购买套餐");
+          return false;
+        } else this.$router.push("/reserve?id=" + this.roomdata._id);
+      });
     },
   },
 };

@@ -20,7 +20,8 @@
 }
 </style>
 <script>
-import { AddUserReservation } from "@/request/api.js";
+// eslint-disable-next-line no-unused-vars
+import { AddUserReservation, GetUserComboList } from "@/request/api.js";
 export default {
   props: ["seatData", "seatStatus"],
   data() {
@@ -44,6 +45,12 @@ export default {
           .then(() => {
             // on confirm·
             // 先检查用户套餐是否有效，再发送请求
+            // GetUserComboList({
+            //   id: this.$store.state.userInfo._id,
+            // }).then((res) => {
+            //   console.log(res);
+            // });
+
             // 确认预约后,发送请求，将预约时间日期座位id传递过去
             AddUserReservation({
               start_time: this.seatStatus.start_time,

@@ -2,6 +2,7 @@
 const User = require('../models/users')
 const jsonwebtoken = require('jsonwebtoken')
 const { secret } = require('../config')
+const Order = require("../models/orders")
 class UsersCtl {
   // 检查用户名是否存在
   async checkUsernameExist (ctx, next) {
@@ -11,6 +12,7 @@ class UsersCtl {
     await next()
 
   }
+
   async login (ctx) {
     ctx.verifyParams({
       username: { type: 'string', required: true },
@@ -21,15 +23,13 @@ class UsersCtl {
     const { _id, username } = user
     // 过期事件为一天
     const token = jsonwebtoken.sign({ _id, username }, secret, { expiresIn: '1d' })
-    ctx.state.user = user
-    // console.log(" ctx.state.user", ctx.state.user)
-    // console.log(" ctx.state.user._id", ctx.state.user._id.toString())
-
     ctx.body = { userInfo: user, token }
   }
   // 检查要删除或修改的用户是否为当前用户
   async checkOwner (ctx, next) {
     if (ctx.params.id != ctx.state.user._id) ctx.throw(403, '没有权限')
+    let user = await User.findById(ctx.state.user._id)
+    ctx.state.user.username = user.username
     await next()
 
   }
@@ -39,9 +39,6 @@ class UsersCtl {
       username: { type: 'string', required: true },
       password: { type: 'string', required: true },
     })
-    // const { username } = ctx.request.body
-    // const requestUser = await User.findOne({ username })
-    // if (requestUser) ctx.throw(409, '用户已经存在')
     const user = await new User(ctx.request.body).save()
     ctx.body = user
   }
@@ -58,7 +55,9 @@ class UsersCtl {
     // { new: true }返回更改后的新数据
     const user = await User.findByIdAndUpdate(ctx.params.id, ctx.request.body, { new: true })
     if (!user) ctx.throw(404, '用户不存在')
+
     // console.log("ctx.state.user", ctx.state.user)
+    ctx.state.user.username = user.username
     ctx.body = user
   }
   // 查找所有用户
@@ -71,9 +70,18 @@ class UsersCtl {
     ctx.body = user
   }
 
-  // 查找特定用户下的所有订单,在orders的控制器里有这个接口
-  async findUserOrders (ctx) {
+  // 查找特定用户下的所有订单,此接口在orders的控制器里
+  // 查找特定用户下的所有套餐
+  async findUserCombos (ctx) {
+    let user = await User.findById(ctx.params.id).select('+orders').populate('orders')
+    let combos = []
+    user.orders.forEach((item, index) => {
+      item.combosInfo.forEach(comboItem => {
+        combos.push(comboItem)
+      })
 
+    })
+    ctx.body = combos
   }
 
 }

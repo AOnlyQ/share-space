@@ -9,7 +9,6 @@ const { connectionLocal } = require('./config')
 const cors = require('koa2-cors');
 mongoose.connect(connectionLocal, { useNewUrlParser: true }, () => console.log('-----------------------------------数据库连接成功-----------------------------------'))
 mongoose.connection.on('error', console.error)
-
 app.use(error({
   // 生产环境暴露错误的堆栈信息不安全，故生产环境将其隐藏
   postFormat: (err, { stack, ...rest }) => process.env.NODE_ENV === 'production' ? rest : { stack, ...rest }
@@ -17,9 +16,6 @@ app.use(error({
 }))
 app.use(bodyparser())
 app.use(parameter(app))
-
-
-
 app.use(cors({
   origin: function (ctx) { //设置允许来自指定域名请求
     if (ctx.url === '/test') {
@@ -33,9 +29,7 @@ app.use(cors({
   allowHeaders: ['Content-Type', 'Authorization', 'Accept'], //设置服务器支持的所有头信息字段
   exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'] //设置获取其他自定义字段
 }))
-
 routing(app)
-
 app.listen(3001, () => {
   console.log('start server...')
 })

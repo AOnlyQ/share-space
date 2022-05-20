@@ -54,7 +54,7 @@ export default {
     height: 3rem;
     border-radius: 0.2rem;
     overflow: hidden;
-    background: url('../assets/bg1.png') no-repeat;
+    background: url('~@/assets/bg1.png') no-repeat;
     background-size: 100% 100%;
     margin-bottom: 0.1rem;
   }

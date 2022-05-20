@@ -9,7 +9,7 @@ class RoomsCtl {
       name: { type: 'string', required: true },
       description: { type: 'string', required: true },
       time: { type: 'string', required: true },
-      remainings: { type: 'number', required: true },
+      total_nums:{ type: 'number', required: true },
       img_url: { type: 'string', required: true },
     })
     const { name } = ctx.request.body
@@ -17,6 +17,20 @@ class RoomsCtl {
     if (requestRoom) ctx.throw(409, '自习室名字已经存在')
     let room = await new Room(ctx.request.body).save()
     ctx.body = room
+  }
+  // 修改自习室
+  async update (ctx) {
+    ctx.verifyParams({
+      name: { type: 'string', required: false },
+      description: { type: 'string', required: false },
+      time: { type: 'string', required: false },
+      total_nums: { type: 'number', required: false },
+      img_url: { type: 'string', required: false },
+    })
+    const room = await Room.findByIdAndUpdate(ctx.params.id, ctx.request.body, { new: true })
+    if (!room) ctx.throw(404, '该自习室不存在')
+    ctx.body = room
+
   }
   // 查询自习室
   async find (ctx) {
@@ -64,11 +78,10 @@ class RoomsCtl {
         seatsStatus[index] = {
           status: "true", seatId: item._id, start_time: ctx.request.body.input_start, end_time: ctx.request.body.input_end
         }
-
-
       }
     })
     ctx.body = seatsStatus
   }
+
 }
 module.exports = new RoomsCtl()
