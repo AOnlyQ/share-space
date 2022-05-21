@@ -8,6 +8,7 @@ exports.judgeTimeAvailable = function (start_time, end_time, input_start, input_
   if (!input_start || !input_end) {
     return true
   }
+  // 不在范围内
   if (inputStart.getTime() <= startTime.getTime() && inputEnd.getTime() <= startTime.getTime()) {
     return true
   } else if (inputStart.getTime() >= endTime.getTime() && inputEnd.getTime() >= endTime.getTime()) {

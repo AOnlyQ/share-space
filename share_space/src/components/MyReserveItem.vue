@@ -31,17 +31,60 @@
     </div>
     <div class="right" style="flex: 2">
       <!-- 暂时还没有实现取消预约的功能 -->
-      <van-button type="primary" size="mini" color="#F4D04B">
-        取消预约
+      <van-button
+        type="primary"
+        size="mini"
+        :disabled="reservationInfo.status === 'success' ? false : true"
+        :color="reservationInfo.status === 'success' ? '#F4D04B' : '#F7F7F7'"
+        @click="cancelReserve"
+      >
+        {{ optStr }}
       </van-button>
     </div>
   </div>
 </template>
 <script>
+import { CancelUserReservation } from "@/request/api";
 export default {
   props: ["reservationInfo"],
+  data() {
+    return {
+      optStr: "取消预约",
+    };
+  },
   created() {
     // console.log("reservationInfo", this.reservationInfo);
+    // 判断订单状态，决定可进行的操作
+    if (this.reservationInfo.status === "success") {
+      this.optStr = "取消预约";
+    } else if (this.reservationInfo.status === "invalid") {
+      this.optStr = "已失效";
+    } else if (this.reservationInfo.status === "cancel") {
+      this.optStr = "已取消";
+    }
+  },
+
+  methods: {
+    cancelReserve() {
+      this.$dialog
+        .confirm({
+          title: "确认取消预约？",
+          // message: `确认预约${this.seatData.code}号座位?`,
+        })
+        .then(() => {
+          CancelUserReservation({
+            userId: this.$store.state.userInfo._id,
+            id: this.reservationInfo._id.toString(),
+          }).then((res) => {
+            console.log(res);
+            if (res.status === 204) {
+              // 取消成功，刷新页面
+              this.$router.go(0);
+            }
+          });
+        })
+        .catch(() => {});
+    },
   },
 };
 </script>

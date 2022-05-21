@@ -7,6 +7,7 @@ const userSchema = new Schema({
   avatar_url: { type: String }, // 用户头像
   gender: { type: String, enum: ['male', 'female'], default: 'male', required: true },
   age: { type: Number },
+  birthday: { type: String },
   location: { type: Object },
   personal_signature: { type: String },
   liking_exams: { type: [{ type: Schema.Types.ObjectId, ref: "Exam" }], select: false },

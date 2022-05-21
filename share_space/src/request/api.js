@@ -55,6 +55,9 @@ export const GetUserReservationList = (params) =>
 // 新增某用户的预约单
 export const AddUserReservation = (params) =>
   request.post(`/${params.userId}/reservations`, params);
+// 取消某用户的某个预约单
+export const CancelUserReservation = (params) =>
+  request.patch(`/${params.userId}/reservations/${params.id}`, params);
 // 根据预约单id查询预约单
 export const GetReservationById = (params) =>
   request.get(`/reservations/${params.reservationId}`);

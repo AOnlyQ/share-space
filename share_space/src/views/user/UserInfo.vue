@@ -98,11 +98,11 @@ export default {
       areaPopupVisible: false,
       avatarSrc: require("@/assets/avatar.jpg"),
       userInfo: {
-        username: "test",
+        username: "",
         avatar_url: " ",
         gender: "",
         birthday: "",
-        location: "未设置",
+        location: { code: "", name: "" },
         hobbies: ["未设置"],
         personal_signature: "未设置",
       },
@@ -121,7 +121,7 @@ export default {
     GetUserInfo({ id: this.$store.state.userInfo._id }).then((res) => {
       // console.log(res);
       if (res.status === 200) {
-        this.userInfo = res.data;
+        this.userInfo = Object.assign(this.userInfo, res.data);
         this.areaCode = this.userInfo.location.code;
       }
     });

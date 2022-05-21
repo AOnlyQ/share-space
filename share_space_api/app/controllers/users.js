@@ -8,6 +8,7 @@ class UsersCtl {
   async checkUsernameExist (ctx, next) {
     const { username } = ctx.request.body
     const repeatedUser = await User.findOne({ username })
+    console.log("ctx.state.user.username",ctx.state.user.username)
     if (repeatedUser && username !== ctx.state.user.username) ctx.throw(409, '用户名已经存在')
     await next()
 

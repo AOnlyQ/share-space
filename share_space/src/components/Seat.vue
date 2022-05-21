@@ -62,14 +62,16 @@ export default {
               seatName: this.seatData.name,
             }).then((res) => {
               console.log("res:", res);
-              if (res.status === 204 || res.status === 200) {
+              if (res.data.status === 204) {
                 this.$toast.success({ message: "预约成功", duration: 1000 });
+                setTimeout(() => {
+                  this.$router.push(
+                    `/reserve_info?reservationId=${res.data.reservationId}`
+                  );
+                }, 0);
+              } else if (res.data.status === 409) {
+                this.$toast.fail("该时间段已预约座位，无法进行预约");
               }
-              setTimeout(() => {
-                this.$router.push(
-                  `/reserve_info?reservationId=${res.data.reservationId}`
-                );
-              }, 0);
             });
           })
           .catch(() => {
