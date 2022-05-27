@@ -1,0 +1,1034 @@
+[{
+  "_id": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "code": 1,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 31,
+  "name": "隔间室1号座位",
+  "reservations": [
+    {
+      "$oid": "6274913264b7c47a72cea40a"
+    },
+    {
+      "$oid": "6274cbe0a1c850ff9fd394a4"
+    },
+    {
+      "$oid": "6275c302ffc257ee0ebca98b"
+    },
+    {
+      "$oid": "6275e0cdffc257ee0ebcaa16"
+    },
+    {
+      "$oid": "62761342ffc257ee0ebcaad0"
+    },
+    {
+      "$oid": "6276265effc257ee0ebcaaf7"
+    },
+    {
+      "$oid": "627626cdfcae7ea8bff1aade"
+    },
+    {
+      "$oid": "627627193917ecf80a9a011e"
+    },
+    {
+      "$oid": "627627da3917ecf80a9a012c"
+    },
+    {
+      "$oid": "627628533917ecf80a9a013c"
+    },
+    {
+      "$oid": "6276315307e45204e48e8230"
+    },
+    {
+      "$oid": "627ca8d982837bba039d5021"
+    },
+    {
+      "$oid": "6282f246370eebbf77cd8b5a"
+    },
+    {
+      "$oid": "6288bee94955447033f18d06"
+    },
+    {
+      "$oid": "6288c9c9f61c4bf317863298"
+    }
+  ],
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1437b12260def208881"
+  },
+  "code": 2,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 5,
+  "name": "隔间室2号座位",
+  "roomName": "隔间室",
+  "reservations": [
+    {
+      "$oid": "6275e1f3ffc257ee0ebcaa28"
+    },
+    {
+      "$oid": "6276390d07e45204e48e8285"
+    },
+    {
+      "$oid": "62890d82f348aa3223f8298d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6270e17b7b12260def208885"
+  },
+  "code": 3,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室3号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1807b12260def208889"
+  },
+  "code": 4,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室4号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1867b12260def20888d"
+  },
+  "code": 5,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室5号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e18b7b12260def208891"
+  },
+  "code": 6,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室6号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1917b12260def208895"
+  },
+  "code": 7,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室7号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1987b12260def208899"
+  },
+  "code": 8,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 1,
+  "name": "隔间室8号座位",
+  "roomName": "隔间室",
+  "reservations": [
+    {
+      "$oid": "6288403a9781537527cf674a"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6270e1997b12260def20889d"
+  },
+  "code": 9,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室9号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e19a7b12260def2088a1"
+  },
+  "code": 10,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室10号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e19b7b12260def2088a5"
+  },
+  "code": 11,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室11号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e19d7b12260def2088a9"
+  },
+  "code": 12,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室12号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e19e7b12260def2088ad"
+  },
+  "code": 13,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室13号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e19f7b12260def2088b1"
+  },
+  "code": 14,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室14号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1a17b12260def2088b5"
+  },
+  "code": 15,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室15号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1a27b12260def2088b9"
+  },
+  "code": 16,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 1,
+  "name": "隔间室16号座位",
+  "roomName": "隔间室",
+  "reservations": [
+    {
+      "$oid": "62761082ffc257ee0ebcaabd"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6270e1d67b12260def2088be"
+  },
+  "code": 17,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室17号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1d87b12260def2088c2"
+  },
+  "code": 18,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室18号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1d97b12260def2088c6"
+  },
+  "code": 19,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室19号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e1db7b12260def2088ca"
+  },
+  "code": 20,
+  "roomId": "626583994e80ff420c38254d",
+  "__v": 0,
+  "name": "隔间室20号座位",
+  "roomName": "隔间室"
+},{
+  "_id": {
+    "$oid": "6270e3317b12260def2088d0"
+  },
+  "code": 1,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室1号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e36e7b12260def2088d4"
+  },
+  "code": 2,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室2号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3707b12260def2088d8"
+  },
+  "code": 3,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室3号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3db7b12260def2088dc"
+  },
+  "code": 4,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室4号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3dc7b12260def2088e0"
+  },
+  "code": 5,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室5号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3dd7b12260def2088e4"
+  },
+  "code": 6,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室6号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3de7b12260def2088e8"
+  },
+  "code": 7,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室7号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e07b12260def2088ec"
+  },
+  "code": 8,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室8号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e17b12260def2088f0"
+  },
+  "code": 9,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室9号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e27b12260def2088f4"
+  },
+  "code": 10,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室10号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e37b12260def2088f8"
+  },
+  "code": 11,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室11号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e47b12260def2088fc"
+  },
+  "code": 12,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室12号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e57b12260def208900"
+  },
+  "code": 13,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室13号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e67b12260def208904"
+  },
+  "code": 14,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室14号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3e87b12260def208908"
+  },
+  "code": 15,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室15号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3f27b12260def20890c"
+  },
+  "code": 16,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室16号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3f37b12260def208910"
+  },
+  "code": 17,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室17号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3f47b12260def208914"
+  },
+  "code": 18,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室18号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3f57b12260def208918"
+  },
+  "code": 19,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室19号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "6270e3f77b12260def20891c"
+  },
+  "code": 20,
+  "roomId": "626584034e80ff420c382551",
+  "__v": 0,
+  "name": "电脑室20号座位",
+  "roomName": "电脑室"
+},{
+  "_id": {
+    "$oid": "62711e6314fd0baa0c33f16c"
+  },
+  "code": 1,
+  "name": "朗读室1号座位",
+  "roomId": "626584294e80ff420c382555",
+  "__v": 0,
+  "roomName": "朗读室"
+},{
+  "_id": {
+    "$oid": "62711eb47563aaa70ca3eed4"
+  },
+  "code": 2,
+  "name": "朗读室2号座位",
+  "roomId": "626584294e80ff420c382555",
+  "__v": 0,
+  "roomName": "朗读室"
+},{
+  "_id": {
+    "$oid": "62711eb97563aaa70ca3eed8"
+  },
+  "code": 3,
+  "name": "朗读室3号座位",
+  "roomId": "626584294e80ff420c382555",
+  "__v": 0,
+  "roomName": "朗读室"
+},{
+  "_id": {
+    "$oid": "6286e1d045e0d1f7e1e267ac"
+  },
+  "code": 4,
+  "name": "朗读室4号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1f345e0d1f7e1e267b0"
+  },
+  "code": 5,
+  "name": "朗读室5号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1f645e0d1f7e1e267b4"
+  },
+  "code": 6,
+  "name": "朗读室6号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1f745e0d1f7e1e267b8"
+  },
+  "code": 7,
+  "name": "朗读室7号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1f845e0d1f7e1e267bc"
+  },
+  "code": 8,
+  "name": "朗读室8号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1f945e0d1f7e1e267c0"
+  },
+  "code": 9,
+  "name": "朗读室9号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1fa45e0d1f7e1e267c4"
+  },
+  "code": 10,
+  "name": "朗读室10号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1fb45e0d1f7e1e267c8"
+  },
+  "code": 11,
+  "name": "朗读室11号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1fc45e0d1f7e1e267cc"
+  },
+  "code": 12,
+  "name": "朗读室12号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1fc45e0d1f7e1e267d0"
+  },
+  "code": 13,
+  "name": "朗读室13号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1fd45e0d1f7e1e267d4"
+  },
+  "code": 14,
+  "name": "朗读室14号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1fe45e0d1f7e1e267d8"
+  },
+  "code": 15,
+  "name": "朗读室15号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e1ff45e0d1f7e1e267dc"
+  },
+  "code": 16,
+  "name": "朗读室16号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e20045e0d1f7e1e267e0"
+  },
+  "code": 17,
+  "name": "朗读室17号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e20045e0d1f7e1e267e4"
+  },
+  "code": 18,
+  "name": "朗读室18号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e20145e0d1f7e1e267e8"
+  },
+  "code": 19,
+  "name": "朗读室19号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e20245e0d1f7e1e267ec"
+  },
+  "code": 20,
+  "name": "朗读室20号座位",
+  "roomId": "626584294e80ff420c382555",
+  "roomName": "朗读室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286e700a477096cdf5f4819"
+  },
+  "code": 1,
+  "name": "研讨室1号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [
+    {
+      "$oid": "6286eb41a477096cdf5f4887"
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "6286f34ea477096cdf5f48a0"
+  },
+  "code": 2,
+  "name": "研讨室2号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f350a477096cdf5f48a4"
+  },
+  "code": 3,
+  "name": "研讨室3号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f351a477096cdf5f48a8"
+  },
+  "code": 4,
+  "name": "研讨室4号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f352a477096cdf5f48ac"
+  },
+  "code": 5,
+  "name": "研讨室5号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f353a477096cdf5f48b0"
+  },
+  "code": 6,
+  "name": "研讨室6号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f354a477096cdf5f48b4"
+  },
+  "code": 7,
+  "name": "研讨室7号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f354a477096cdf5f48b8"
+  },
+  "code": 8,
+  "name": "研讨室8号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f355a477096cdf5f48bc"
+  },
+  "code": 9,
+  "name": "研讨室9号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f357a477096cdf5f48c0"
+  },
+  "code": 10,
+  "name": "研讨室10号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f358a477096cdf5f48c4"
+  },
+  "code": 11,
+  "name": "研讨室11号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f359a477096cdf5f48c8"
+  },
+  "code": 12,
+  "name": "研讨室12号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35aa477096cdf5f48cc"
+  },
+  "code": 13,
+  "name": "研讨室13号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35aa477096cdf5f48d0"
+  },
+  "code": 14,
+  "name": "研讨室14号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35ba477096cdf5f48d4"
+  },
+  "code": 15,
+  "name": "研讨室15号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35ca477096cdf5f48d8"
+  },
+  "code": 16,
+  "name": "研讨室16号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35da477096cdf5f48dc"
+  },
+  "code": 17,
+  "name": "研讨室17号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35ea477096cdf5f48e0"
+  },
+  "code": 18,
+  "name": "研讨室18号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f35fa477096cdf5f48e4"
+  },
+  "code": 19,
+  "name": "研讨室19号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f360a477096cdf5f48e8"
+  },
+  "code": 20,
+  "name": "研讨室20号座位",
+  "roomId": "6265844f4e80ff420c382558",
+  "roomName": "研讨室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f440a477096cdf5f48f2"
+  },
+  "code": 1,
+  "name": "阅览室1号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f442a477096cdf5f48f6"
+  },
+  "code": 2,
+  "name": "阅览室2号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f442a477096cdf5f48fa"
+  },
+  "code": 3,
+  "name": "阅览室3号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f443a477096cdf5f48fe"
+  },
+  "code": 4,
+  "name": "阅览室4号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f444a477096cdf5f4902"
+  },
+  "code": 5,
+  "name": "阅览室5号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f445a477096cdf5f4906"
+  },
+  "code": 6,
+  "name": "阅览室6号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f446a477096cdf5f490a"
+  },
+  "code": 7,
+  "name": "阅览室7号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f447a477096cdf5f490e"
+  },
+  "code": 8,
+  "name": "阅览室8号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f447a477096cdf5f4912"
+  },
+  "code": 9,
+  "name": "阅览室9号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f448a477096cdf5f4916"
+  },
+  "code": 10,
+  "name": "阅览室10号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f449a477096cdf5f491a"
+  },
+  "code": 11,
+  "name": "阅览室11号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44aa477096cdf5f491e"
+  },
+  "code": 12,
+  "name": "阅览室12号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44ba477096cdf5f4922"
+  },
+  "code": 13,
+  "name": "阅览室13号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [
+    {
+      "$oid": "6286f6622d8233ac1a92f635"
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "6286f44ba477096cdf5f4926"
+  },
+  "code": 14,
+  "name": "阅览室14号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44ca477096cdf5f492a"
+  },
+  "code": 15,
+  "name": "阅览室15号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44da477096cdf5f492e"
+  },
+  "code": 16,
+  "name": "阅览室16号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44ea477096cdf5f4932"
+  },
+  "code": 17,
+  "name": "阅览室17号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44fa477096cdf5f4936"
+  },
+  "code": 18,
+  "name": "阅览室18号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f44fa477096cdf5f493a"
+  },
+  "code": 19,
+  "name": "阅览室19号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6286f450a477096cdf5f493e"
+  },
+  "code": 20,
+  "name": "阅览室20号座位",
+  "roomId": "626584774e80ff420c38255b",
+  "roomName": "阅览室",
+  "reservations": [],
+  "__v": 0
+}]

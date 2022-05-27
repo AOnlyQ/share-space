@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "626d68392a97fd41160647d7"
+  },
+  "name": "小时体验卡",
+  "price": 4,
+  "origin_price": 4,
+  "tag": "",
+  "desc": "",
+  "chargeMethod": "按时计费",
+  "consumableNum": "1小时",
+  "validPeriod": "365天",
+  "details": "学习时间为1个小时",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d68a72a97fd41160647db"
+  },
+  "name": "单日学习卡",
+  "price": 18,
+  "origin_price": 20,
+  "tag": null,
+  "desc": "",
+  "chargeMethod": "按日计费",
+  "consumableNum": "1天",
+  "validPeriod": "1天",
+  "details": "购买后需在15天内开卡使用，自签到开始计费，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d6910cd06840832f002a4"
+  },
+  "name": "通用周卡套餐",
+  "price": 99,
+  "origin_price": 119,
+  "tag": "单周体验",
+  "desc": "每周只需99，全天不限时学习，让你的学习更高效",
+  "chargeMethod": "按周计费",
+  "consumableNum": "1周",
+  "validPeriod": "7天",
+  "details": "购买后需在15天内开卡使用，自签到开始计费，往后顺延15天，一经使用，不退不换，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d6998cd06840832f002a8"
+  },
+  "name": "通用月卡套餐",
+  "price": 298,
+  "origin_price": 398,
+  "tag": "单月体验",
+  "desc": "单月不限时体验",
+  "chargeMethod": "按月计费",
+  "consumableNum": "1月",
+  "validPeriod": "30天",
+  "details": "购买后，自第一次签到开始计费，往后顺延30天，一经使用，不退不换，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d69bccd06840832f002ab"
+  },
+  "name": "双月卡套餐",
+  "price": 520,
+  "origin_price": 698,
+  "tag": "双月连续学",
+  "desc": "双月连续学，全天不限时学习，让你的学习更高效",
+  "chargeMethod": "按月计费",
+  "consumableNum": "2月",
+  "validPeriod": "60天",
+  "details": "购买后，自第一次签到开始计费，往后顺延60天，一经使用，不退不换，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d69e6cd06840832f002ae"
+  },
+  "name": "通用季卡套餐",
+  "price": 688,
+  "origin_price": 998,
+  "tag": "季度大优惠",
+  "desc": "三个月全天不限时学习，单月只需260元哦",
+  "chargeMethod": "按月计费",
+  "consumableNum": "3月",
+  "validPeriod": "90天",
+  "details": "购买后，自第一次签到开始计费，往后顺延90天，一经使用，不退不换，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d6a01cd06840832f002b1"
+  },
+  "name": "通用半年卡套餐",
+  "price": 1288,
+  "origin_price": 1899,
+  "tag": "半年连续学",
+  "desc": "连续半年学习，提升自己，还有什么干不成的！你还在等什么，单月只需230左右！",
+  "chargeMethod": "按月计费",
+  "consumableNum": "6月",
+  "validPeriod": "180天",
+  "details": "购买后，自第一次签到开始计费，往后顺延180天，一经使用，不退不换，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626d6c0ab71aac7b76fbe45d"
+  },
+  "name": "通用年卡套餐",
+  "price": 2488,
+  "origin_price": 2888,
+  "tag": "全年连续学",
+  "desc": "全年连续学习，全天不限时学习，让你的学习更高效",
+  "chargeMethod": "按月计费",
+  "consumableNum": "12月",
+  "validPeriod": "365天",
+  "details": "购买后，自第一次签到开始计费，往后顺延365天，一经使用，不退不换，逾期作废！",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627f085f370eebbf77cd8a8e"
+  },
+  "name": "test",
+  "price": 12,
+  "origin_price": 1899,
+  "chargeMethod": "1",
+  "consumableNum": "1",
+  "__v": 0
+}]

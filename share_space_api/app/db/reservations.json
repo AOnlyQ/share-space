@@ -1,0 +1,842 @@
+[{
+  "_id": {
+    "$oid": "6274913264b7c47a72cea40a"
+  },
+  "start_time": "2022-5-6 11:00",
+  "end_time": "2022-5-6 14:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "roomName": "隔间室",
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651806514225"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651806514225"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6274cbe0a1c850ff9fd394a4"
+  },
+  "start_time": "2022-5-6 15:00",
+  "end_time": "2022-5-6 18:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "roomName": "隔间室",
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651821536578"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651821536578"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6275c302ffc257ee0ebca98b"
+  },
+  "start_time": "2022-5-7 09:00",
+  "end_time": "2022-5-7 12:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "roomName": "隔间室",
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651884802103"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651884802103"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6275e0cdffc257ee0ebcaa16"
+  },
+  "start_time": "2022-5-7 12:00",
+  "end_time": "2022-5-7 13:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651892429611"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651892429611"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6275e1f3ffc257ee0ebcaa28"
+  },
+  "start_time": "2022-5-7 12:00",
+  "end_time": "2022-5-7 14:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e1437b12260def208881"
+  },
+  "seatName": "隔间室2号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651892723869"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651892723869"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "62761082ffc257ee0ebcaabd"
+  },
+  "start_time": "2022-5-7 15:00",
+  "end_time": "2022-5-7 16:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e1a27b12260def2088b9"
+  },
+  "seatName": "隔间室16号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651904642915"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651904642915"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "62761342ffc257ee0ebcaad0"
+  },
+  "start_time": "2022-5-7 15:00",
+  "end_time": "2022-5-7 16:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651905346442"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651905346442"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6276265effc257ee0ebcaaf7"
+  },
+  "start_time": "2022-5-7 16:00",
+  "end_time": "2022-5-7 17:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651910238627"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651910238627"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "627626cdfcae7ea8bff1aade"
+  },
+  "start_time": "2022-5-7 17:00",
+  "end_time": "2022-5-7 18:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651910349794"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651910349794"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "627627193917ecf80a9a011e"
+  },
+  "start_time": "2022-5-7 18:00",
+  "end_time": "2022-5-7 19:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651910425467"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651910425467"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "627627da3917ecf80a9a012c"
+  },
+  "start_time": "2022-5-7 19:00",
+  "end_time": "2022-5-7 20:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651910618489"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651910618489"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "627628533917ecf80a9a013c"
+  },
+  "start_time": "2022-5-7 20:00",
+  "end_time": "2022-5-7 21:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651910739351"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651910739351"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6276315307e45204e48e8230"
+  },
+  "start_time": "2022-5-7 21:00",
+  "end_time": "2022-5-7 22:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651913043344"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651913043344"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6276390d07e45204e48e8285"
+  },
+  "start_time": "2022-5-7 20:00",
+  "end_time": "2022-5-7 21:00",
+  "userId": {
+    "$oid": "625187044d71c7d98921119a"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e1437b12260def208881"
+  },
+  "seatName": "隔间室2号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651915021505"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651915021505"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "627ca8d982837bba039d5021"
+  },
+  "start_time": "2022-5-12 15:00",
+  "end_time": "2022-5-12 16:00",
+  "userId": {
+    "$oid": "625187044d71c7d98921119a"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1652336857206"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1652336857206"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6282f246370eebbf77cd8b5a"
+  },
+  "start_time": "2022-5-17 09:00",
+  "end_time": "2022-5-17 11:00",
+  "userId": {
+    "$oid": "627c65ccc4d4361903f9ee44"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1652748870266"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1652748870266"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6286eb41a477096cdf5f4887"
+  },
+  "start_time": "2022-5-21 07:00",
+  "end_time": "2022-5-21 11:00",
+  "userId": {
+    "$oid": "627c65ccc4d4361903f9ee44"
+  },
+  "roomId": {
+    "$oid": "6265844f4e80ff420c382558"
+  },
+  "roomName": "研讨室",
+  "seatId": {
+    "$oid": "6286e700a477096cdf5f4819"
+  },
+  "seatName": "研讨室1号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653009217238"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653009217238"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6286f6622d8233ac1a92f635"
+  },
+  "start_time": "2022-5-21 07:00",
+  "end_time": "2022-5-21 08:00",
+  "userId": {
+    "$oid": "627c65ccc4d4361903f9ee44"
+  },
+  "roomId": {
+    "$oid": "626584774e80ff420c38255b"
+  },
+  "roomName": "阅览室",
+  "seatId": {
+    "$oid": "6286f44ba477096cdf5f4922"
+  },
+  "seatName": "阅览室13号座位",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653012066183"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653012066183"
+    }
+  },
+  "__v": 0,
+  "status": "invalid"
+},{
+  "_id": {
+    "$oid": "6288403a9781537527cf674a"
+  },
+  "start_time": "2022-5-21 10:00",
+  "end_time": "2022-5-21 12:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e1987b12260def208899"
+  },
+  "seatName": "隔间室8号座位",
+  "status": "invalid",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653096506579"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653121000947"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "628889d39b74ea4ff9eabab9"
+  },
+  "start_time": "2022-5-23 21:00",
+  "end_time": "2022-5-23 23:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653115347121"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653130483325"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288a55ebf4bff71154e249e"
+  },
+  "start_time": "2022-5-23 07:00",
+  "end_time": "2022-5-23 09:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653122398241"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653123653297"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288abc2bf4bff71154e2543"
+  },
+  "start_time": "2022-5-23 08:00",
+  "end_time": "2022-5-23 09:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653124034057"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653124046995"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288ac06bf4bff71154e25ad"
+  },
+  "start_time": "2022-5-22 07:00",
+  "end_time": "2022-5-22 08:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653124102689"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653124129189"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288b7881d15c989d5873242"
+  },
+  "start_time": "2022-5-22 07:00",
+  "end_time": "2022-5-22 09:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653127048456"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653130485870"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288bc5b9646e3f016d97fa8"
+  },
+  "start_time": "2022-5-22 09:00",
+  "end_time": "2022-5-22 10:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653128283059"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653128483513"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288bee94955447033f18d06"
+  },
+  "start_time": "2022-5-23 12:00",
+  "end_time": "2022-5-23 15:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "success",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653128937665"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653128937665"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6288c9c9f61c4bf317863298"
+  },
+  "start_time": "2022-5-22 09:00",
+  "end_time": "2022-5-22 15:00",
+  "userId": {
+    "$oid": "625187864d71c7d98921119e"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "success",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653131721858"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653131721858"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62890d2af348aa3223f82959"
+  },
+  "start_time": "2022-5-23 08:00",
+  "end_time": "2022-5-23 10:00",
+  "userId": {
+    "$oid": "62890cdbf348aa3223f82940"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e11d7b12260def20887d"
+  },
+  "seatName": "隔间室1号座位",
+  "status": "cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653148970185"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653149033827"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62890d82f348aa3223f8298d"
+  },
+  "start_time": "2022-5-23 07:00",
+  "end_time": "2022-5-23 09:00",
+  "userId": {
+    "$oid": "62890cdbf348aa3223f82940"
+  },
+  "roomId": {
+    "$oid": "626583994e80ff420c38254d"
+  },
+  "roomName": "隔间室",
+  "seatId": {
+    "$oid": "6270e1437b12260def208881"
+  },
+  "seatName": "隔间室2号座位",
+  "status": "success",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653149058553"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653149058553"
+    }
+  },
+  "__v": 0
+}]

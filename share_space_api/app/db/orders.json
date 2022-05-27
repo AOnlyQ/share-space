@@ -1,0 +1,701 @@
+[{
+  "_id": {
+    "$oid": "626fdae1d313f61eda9305e6"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651497697639"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651497697639"
+    }
+  },
+  "__v": 0,
+  "status": "error"
+},{
+  "_id": {
+    "$oid": "626fdb24d313f61eda9305ec"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "combosInfo": [
+    {
+      "_id": "626d6910cd06840832f002a4",
+      "name": "通用周卡套餐",
+      "price": 99,
+      "origin_price": 119,
+      "tag": "单周体验",
+      "desc": "每周只需99，全天不限时学习，让你的学习更高效",
+      "chargeMethod": "按周计费",
+      "consumableNum": "1周",
+      "validPeriod": "7天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，往后顺延15天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651497764157"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651497764157"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626fe183f6a7dc153746cc2c"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "combosInfo": [
+    {
+      "_id": "626d6910cd06840832f002a4",
+      "name": "通用周卡套餐",
+      "price": 99,
+      "origin_price": 119,
+      "tag": "单周体验",
+      "desc": "每周只需99，全天不限时学习，让你的学习更高效",
+      "chargeMethod": "按周计费",
+      "consumableNum": "1周",
+      "validPeriod": "7天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，往后顺延15天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651499395614"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651499395614"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626ffa4bf6a7dc153746cc58"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "combosInfo": [
+    {
+      "_id": "626d6910cd06840832f002a4",
+      "name": "通用周卡套餐",
+      "price": 99,
+      "origin_price": 119,
+      "tag": "单周体验",
+      "desc": "每周只需99，全天不限时学习，让你的学习更高效",
+      "chargeMethod": "按周计费",
+      "consumableNum": "1周",
+      "validPeriod": "7天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，往后顺延15天，一经使用，不退不换，逾期作废！"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651505739950"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651505739950"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627015d19fa317e6a85a98b8"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68a72a97fd41160647db",
+      "name": "单日学习卡",
+      "price": 18,
+      "origin_price": 20,
+      "tag": null,
+      "desc": "",
+      "chargeMethod": "按日计费",
+      "consumableNum": "1天",
+      "validPeriod": "1天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651512785934"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651512785934"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62701b719fa317e6a85a98f5"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d6998cd06840832f002a8",
+      "name": "通用月卡套餐",
+      "price": 298,
+      "origin_price": 398,
+      "tag": "单月体验",
+      "desc": "单月不限时体验",
+      "chargeMethod": "按月计费",
+      "consumableNum": "1月",
+      "validPeriod": "30天",
+      "details": "购买后，自第一次签到开始计费，往后顺延30天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651514225081"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651514225081"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62701e15b81cfc43959f766d"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d69e6cd06840832f002ae",
+      "name": "通用季卡套餐",
+      "price": 688,
+      "origin_price": 998,
+      "tag": "季度大优惠",
+      "desc": "三个月全天不限时学习，单月只需260元哦",
+      "chargeMethod": "按月计费",
+      "consumableNum": "3月",
+      "validPeriod": "90天",
+      "details": "购买后，自第一次签到开始计费，往后顺延90天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651514901885"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651514901885"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627024321d38664f9b022612"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651516466889"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651516466889"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62709ee8b8399b7c9b7d8725"
+  },
+  "userId": "625187044d71c7d98921119a",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68a72a97fd41160647db",
+      "name": "单日学习卡",
+      "price": 18,
+      "origin_price": 20,
+      "tag": null,
+      "desc": "",
+      "chargeMethod": "按日计费",
+      "consumableNum": "1天",
+      "validPeriod": "1天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651547880842"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651547880842"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62709f09b8399b7c9b7d8739"
+  },
+  "userId": "625187044d71c7d98921119a",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d6998cd06840832f002a8",
+      "name": "通用月卡套餐",
+      "price": 298,
+      "origin_price": 398,
+      "tag": "单月体验",
+      "desc": "单月不限时体验",
+      "chargeMethod": "按月计费",
+      "consumableNum": "1月",
+      "validPeriod": "30天",
+      "details": "购买后，自第一次签到开始计费，往后顺延30天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651547913374"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651547913374"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62722fff52f8a50d82dce475"
+  },
+  "userId": "62518800cd1d7d0f637b8509",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651650559852"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651650559852"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6272300152f8a50d82dce479"
+  },
+  "userId": "62518800cd1d7d0f637b8509",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651650561952"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651650561952"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627370ec765c7cf1d7b109bc"
+  },
+  "userId": "62518800cd1d7d0f637b8509",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68a72a97fd41160647db",
+      "name": "单日学习卡",
+      "price": 18,
+      "origin_price": 20,
+      "tag": null,
+      "desc": "",
+      "chargeMethod": "按日计费",
+      "consumableNum": "1天",
+      "validPeriod": "1天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651732716513"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651732716513"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627389b2b333873283f8832a"
+  },
+  "userId": "6262acf0b6a87cdce77daf27",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651739058814"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651739058814"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6274cad78a4a7f21d2a19ae2"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651821271143"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651821271143"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6274cadf8a4a7f21d2a19ae8"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d6998cd06840832f002a8",
+      "name": "通用月卡套餐",
+      "price": 298,
+      "origin_price": 398,
+      "tag": "单月体验",
+      "desc": "单月不限时体验",
+      "chargeMethod": "按月计费",
+      "consumableNum": "1月",
+      "validPeriod": "30天",
+      "details": "购买后，自第一次签到开始计费，往后顺延30天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1651821279503"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1651821279503"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6278821957eb78475c8da153"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1652064794013"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1652064794013"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627c6cc6c4d4361903f9ee4a"
+  },
+  "userId": "625187044d71c7d98921119a",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1652321478507"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1652321478507"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627c7f73e7febb22b7edf54e"
+  },
+  "userId": "627c65ccc4d4361903f9ee44",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1652326259645"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1652326259645"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627f312c370eebbf77cd8aa0"
+  },
+  "userId": "627c65ccc4d4361903f9ee44",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1652502828837"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1652502828837"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62884bc2534719c4ceabecd8"
+  },
+  "userId": "625187864d71c7d98921119e",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d6910cd06840832f002a4",
+      "name": "通用周卡套餐",
+      "price": 99,
+      "origin_price": 119,
+      "tag": "单周体验",
+      "desc": "每周只需99，全天不限时学习，让你的学习更高效",
+      "chargeMethod": "按周计费",
+      "consumableNum": "1周",
+      "validPeriod": "7天",
+      "details": "购买后需在15天内开卡使用，自签到开始计费，往后顺延15天，一经使用，不退不换，逾期作废！",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653099458491"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653099458491"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62890d01f348aa3223f82948"
+  },
+  "userId": "62890cdbf348aa3223f82940",
+  "status": "success",
+  "combosInfo": [
+    {
+      "_id": "626d68392a97fd41160647d7",
+      "name": "小时体验卡",
+      "price": 4,
+      "origin_price": 4,
+      "tag": "",
+      "desc": "",
+      "chargeMethod": "按时计费",
+      "consumableNum": "1小时",
+      "validPeriod": "365天",
+      "details": "学习时间为1个小时",
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1653148929888"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1653148929888"
+    }
+  },
+  "__v": 0
+}]
