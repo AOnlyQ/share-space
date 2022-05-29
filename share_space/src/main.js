@@ -19,21 +19,6 @@ Vue.prototype.$dayjs = dayjs; //可以全局使用dayjs
 // dayjs().format();
 Vue.config.productionTip = false;
 
-// 配置请求的根路径
-axios.defaults.baseURL = "http://localhost:3001";
-
-axios.interceptors.request.use((config) => {
-  // console.log(config)
-  config.headers.Authorization = window.sessionStorage.getItem("token");
-  // 在最后必须 return config
-
-  return config;
-});
-
-// 响应拦截器
-axios.interceptors.response.use((config) => {
-  return config;
-});
 Vue.filter("RMBformat", (val) => {
   return "￥" + Number(val);
 });

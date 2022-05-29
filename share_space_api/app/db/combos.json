@@ -110,14 +110,4 @@
   "validPeriod": "365天",
   "details": "购买后，自第一次签到开始计费，往后顺延365天，一经使用，不退不换，逾期作废！",
   "__v": 0
-},{
-  "_id": {
-    "$oid": "627f085f370eebbf77cd8a8e"
-  },
-  "name": "test",
-  "price": 12,
-  "origin_price": 1899,
-  "chargeMethod": "1",
-  "consumableNum": "1",
-  "__v": 0
 }]

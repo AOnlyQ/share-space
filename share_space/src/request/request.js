@@ -1,4 +1,5 @@
 import axios from "axios";
+
 const instance = axios.create({
   baseURL: "http://localhost:3001",
   timeout: 5000,
@@ -7,7 +8,6 @@ const instance = axios.create({
 instance.interceptors.request.use(
   (config) => {
     // if()
-
     config.headers.Authorization =
       "Bearer " + window.sessionStorage.getItem("token");
     // 方便测试，后面记得改
