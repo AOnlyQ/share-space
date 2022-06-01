@@ -17,6 +17,7 @@ exports.judgeTimeAvailable = function (start_time, end_time, input_start, input_
     return false
   }
 };
+
 // 将时间戳格式变为
 exports.dateFormat = (Timestamp) => {
   let date1 = new Date(Timestamp);
@@ -26,3 +27,5 @@ exports.dateFormat = (Timestamp) => {
     date1.toTimeString().substr(0, 8)
   );
 };
+
+
