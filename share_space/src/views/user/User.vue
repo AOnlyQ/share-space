@@ -105,14 +105,14 @@ export default {
     };
   },
   created() {
-    // this.userInfo = JSON.parse(window.sessionStorage.getItem("userInfo"));
+    // this.userInfo = JSON.parse(window.localStorage.getItem("userInfo"));
     // this.editUserForm = this.userInfo;
     this.getUserInfo();
   },
   methods: {
     // 退出登录
     logout() {
-      window.sessionStorage.clear();
+      window.localStorage.clear();
       this.$router.push("/login");
     },
     getUserInfo() {

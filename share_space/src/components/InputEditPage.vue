@@ -38,8 +38,8 @@ export default {
         // console.log(res);
         if (res.status === 200) {
           this.$toast.success("修改用户名成功！");
-          // 用户信息修改了，将sessionStorage中的也进行修改
-          window.sessionStorage.setItem("userInfo", JSON.stringify(res.data));
+          // 用户信息修改了，将localStorage中的也进行修改
+          window.localStorage.setItem("userInfo", JSON.stringify(res.data));
           this.$store.commit("setUserInfo", res.data);
           setTimeout(() => {
             this.$router.go(-1);

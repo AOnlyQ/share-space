@@ -67,11 +67,11 @@ export default {
       Login(this.loginForm)
         .then((res) => {
           // console.log("Login组件中login", res);
-          window.sessionStorage.setItem("token", res.data.token);
+          window.localStorage.setItem("token", res.data.token);
           // let userInfo = { username: res.data.username };
 
-          // 方法1.保存在sessionStorage中每次取当前用户id有点麻烦
-          window.sessionStorage.setItem(
+          // 方法1.保存在localStorage中每次取当前用户id有点麻烦
+          window.localStorage.setItem(
             "userInfo",
             JSON.stringify(res.data.userInfo)
           );

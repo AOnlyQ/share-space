@@ -88,7 +88,7 @@ export default {
           if (res.status === 200) this.$toast.success("修改成功");
 
           setTimeout(() => {
-            window.sessionStorage.setItem("userInfo", JSON.stringify(res.data));
+            window.localStorage.setItem("userInfo", JSON.stringify(res.data));
             // 将store中的数据更新
             this.$store.commit("setUserInfo", res.data);
             // 清空表单
